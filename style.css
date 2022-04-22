@@ -130,9 +130,8 @@ body {
   background-image: url(image/images/text-bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   color: transparent;
-  background-size: 100vw;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
