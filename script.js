@@ -29,42 +29,42 @@ navLinkMobiles.forEach(
 
 // mobile menu End
 
-const stagePerformer = [
+const speakers = [
   {
-    title: 'Silsila Qawaali Band',
-    style: 'Qawali',
-    information: 'Sissila is the very first qawaali band of Dhaka University. They are performing in the university campus for the last 3 years',
-    figure: 'image/performers/performer1.jpg',
+    title: 'Md Masuduzzaman',
+    style: 'Country Representative at SCUT ISU',
+    information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
+    figure: 'image/performers/speaker1.jpg',
   },
   {
-    title: ' Sheikh Fahim Faisal',
-    style: 'Sufi',
-    information: 'Prominent vandari and sufi singer of Bangladesh. He is a national level singer in several media and many sufi khankas',
-    figure: 'image/performers/performer2.jpg',
+    title: 'Md Khairul Islam',
+    style: 'Lectuter of Computer Science and Engineering at AIUB',
+    information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
+    figure: 'image/performers/speaker2.jpg',
   },
   {
-    title: 'Nadim Qawaal',
-    style: 'Qawali',
-    information: 'Oldest qawaali group of Bangladesh. They are performing qawaali for the last 100 years in the sub continent.',
-    figure: 'image/performers/performer3.jpg',
+    title: 'Fokirul Alagir',
+    style: 'Former B.Sc. student of CST',
+    information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
+    figure: 'image/performers/speaker3.jpg',
   },
   {
-    title: 'Shahbazi Brothers',
-    style: 'Vandari',
-    information: 'Shahbazi brothers are singers and poets. They have a powerful cultural tradition in their family for decades.',
-    figure: 'image/performers/performer4.jpg',
+    title: 'Muhammad Abdullah',
+    style: 'Lecturer of CST at SCUT',
+    information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
+    figure: 'image/performers/speaker4.JPG',
   },
   {
-    title: 'Rumi Group',
-    style: 'Dance',
-    information: 'Run by the Shahbaz foundation. They have proved themselves as the finest rumi dancers of Bangladesh. lorem',
-    figure: 'image/performers/performer5.jpg',
+    title: 'Romzan Ali',
+    style: 'Senior software developer at brainstrom',
+    information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
+    figure: 'image/performers/speaker5.jpg',
   },
   {
     title: 'Muhammad Hossain',
-    style: 'Devotional',
-    information: 'Dhaka based Poet and cultural activist of Bangladesh. lorem ispum lorem ispum lorem ispum lorem ispum',
-    figure: 'image/performers/performer6.jpg',
+    style: 'Web developer',
+    information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
+    figure: 'image/performers/speaker6.jpg',
   },
 ];
 
@@ -74,8 +74,8 @@ performerButton.setAttribute('type', 'button');
 performerButton.innerHTML = 'MORE <i class="fas fa-angle-down"></i>';
 performerButton.addEventListener('click', () => {
   document.querySelector('.speakers-group').innerHTML = '';
-  let stagePerformerLength = stagePerformer.length;
-  for (let i = 0; i < stagePerformerLength; i++) {
+  let speakersLength = speakers.length;
+  for (let i = 0; i < speakersLength; i++) {
     const performer = document.createElement('article');
     const performerImage = document.createElement('div');
     const imageDots = document.createElement('img');
@@ -91,15 +91,15 @@ performerButton.addEventListener('click', () => {
     imageDots.setAttribute('src', 'image/dotBackground.jpg');
     imageDots.setAttribute('alt', 'dots');
     performerFigure.classList.add('performer_figure');
-    performerFigure.setAttribute('src', stagePerformer[i].figure);
+    performerFigure.setAttribute('src', speakers[i].figure);
     performerFigure.setAttribute('alt', 'singer_figure');
     performerInfo.classList.add('performer_info');
     performerTitle.classList.add('performer_title');
-    performerTitle.textContent = stagePerformer[i].title;
+    performerTitle.textContent = speakers[i].title;
     performerStyle.classList.add('performer_style');
-    performerStyle.textContent = stagePerformer[i].style;
+    performerStyle.textContent = speakers[i].style;
     performerInformation.classList.add('performer_information');
-    performerInformation.textContent = stagePerformer[i].information;
+    performerInformation.textContent = speakers[i].information;
     performerImage.append(imageDots, performerFigure);
     performerInfo.append(performerTitle, performerStyle, hr, performerInformation);
     performer.append(performerImage, performerInfo);
@@ -124,15 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
     imageDots.setAttribute('src', 'image/dotBackground.jpg');
     imageDots.setAttribute('alt', 'dots');
     performerFigure.classList.add('performer_figure');
-    performerFigure.setAttribute('src', stagePerformer[i].figure);
+    performerFigure.setAttribute('src', speakers[i].figure);
     performerFigure.setAttribute('alt', 'singer_figure');
     performerInfo.classList.add('performer_info');
     performerTitle.classList.add('performer_title');
-    performerTitle.textContent = stagePerformer[i].title;
+    performerTitle.textContent = speakers[i].title;
     performerStyle.classList.add('performer_style');
-    performerStyle.textContent = stagePerformer[i].style;
+    performerStyle.textContent = speakers[i].style;
     performerInformation.classList.add('performer_information');
-    performerInformation.textContent = stagePerformer[i].information;
+    performerInformation.textContent = speakers[i].information;
     performerImage.append(imageDots, performerFigure);
     performerInfo.append(performerTitle, performerStyle, hr, performerInformation);
     performer.append(performerImage, performerInfo);
