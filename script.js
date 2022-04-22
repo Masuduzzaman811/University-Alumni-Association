@@ -27,8 +27,6 @@ navLinkMobiles.forEach(
   },
 );
 
-// mobile menu End
-
 const speakers = [
   {
     title: 'Md Masuduzzaman',
@@ -52,7 +50,7 @@ const speakers = [
     title: 'Muhammad Abdullah',
     style: 'Lecturer of CST at SCUT',
     information: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, voluptas.',
-    figure: 'image/performers/speaker4.JPG',
+    figure: 'image/performers/speaker4.jpg',
   },
   {
     title: 'Romzan Ali',

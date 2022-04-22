@@ -1,11 +1,11 @@
 @font-face {
   font-family: cocogoose;
-  src: url(../font/Cocogoose_trial.ttf);
+  src: url(font/Cocogoose_trial.ttf);
 }
 
 @font-face {
   font-family: lato;
-  src: url(../font/Lato-Regular.ttf);
+  src: url(font/Lato-Regular.ttf);
 }
 
 * {
@@ -275,7 +275,7 @@ body {
 .cardOne {
   margin-top: 30px;
   margin-bottom: 50px;
-  background-image: url(../image/background2.png);
+  background-image: url(image/background2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 290px;
@@ -285,7 +285,7 @@ body {
 .cardTwo {
   margin-top: 30px;
   margin-bottom: 50px;
-  background-image: url(../image/background1.png);
+  background-image: url(image/background1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 285px;
