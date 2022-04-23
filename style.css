@@ -51,9 +51,9 @@ body {
 }
 
 .header {
-  padding: 10px;
+  padding: 1rem 5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -74,7 +74,7 @@ body {
   display: flex;
   padding: 1px;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   top: 0;
   position: static;
@@ -110,13 +110,12 @@ body {
   background-image: url(image/background1.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .main-div {
-  padding: 3.75rem 5rem 3rem;
+  padding: 3.75rem 6rem 3.75rem;
   background-color: rgba(255, 255, 255, 0.8);
-  height: 100vh;
+  height: max-content;
 }
 
 .header-text {
@@ -148,12 +147,13 @@ body {
 
 .program-details {
   border: solid 5px;
-  font-size: 15px;
+  font-size: 1.25rem;
   width: 80%;
   margin-top: 30px;
   padding: 10px;
   font-family: lato, sans-serif;
-  line-height: 24px;
+  line-height: 2rem;
+  color: #272a31;
   border-color: #fff;
 }
 
@@ -210,10 +210,14 @@ body {
   border: 2px solid transparent;
   text-align: center;
   align-items: center;
-  margin: 5px;
+  margin: 3px;
   padding: 20px;
   background-color: rgba(52, 55, 65, 0.6);
   width: 180px;
+}
+
+.event-box:hover {
+  border: 3px solid #fff;
 }
 
 .programIcon {
@@ -390,12 +394,13 @@ body {
   font-family: cocogoose, sans-serif;
   color: #3d3d3d;
   font-size: 12px;
-  justify-content: center;
-  padding: 20px;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 3.5rem 4rem;
 }
 
 .footerLogo {
-  width: 10rem;
+  width: 15rem;
   margin-right: 4rem;
 }
 
@@ -487,9 +492,10 @@ button:hover {
   }
 
   .program-details {
-    width: 70%;
+    width: 90%;
     border: solid 3px;
-    font-size: 17px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     margin-top: 40px;
     padding: 10px;
     border-color: #fff;
@@ -501,7 +507,7 @@ button:hover {
   }
 
   .program-venue {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .events {
@@ -591,6 +597,36 @@ button:hover {
   .performer_figure {
     left: 20px;
     top: -35px;
+  }
+
+  .program-text {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .program-details {
+    width: 100%;
+  }
+
+  .events {
+    width: 100%;
+  }
+
+  .events-container {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+  }
+
+  .event-box {
+    position: relative;
+    width: 100%;
+    padding: 0.2rem;
+  }
+
+  .event-title {
+    font-size: 1rem;
   }
 
   #footer {

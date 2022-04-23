@@ -457,14 +457,32 @@ body {
   .footer {
     font-size: 12px;
     justify-content: center;
-    padding: 30px;
+    padding: 2rem 3rem;
     background-color: #d3d3d3;
     color: tomato;
     font-weight: normal;
   }
 
   .footerLogo {
-    width: 200px;
+    width: 250px;
     margin-right: 50px;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .sponsor-images-container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .sponsor-img {
+    width: 100px;
+    margin: 1rem 1rem;
+  }
+
+  .footerLogo {
+    width: 200px;
+    margin-right: 2rem;
+  }
+
 }
